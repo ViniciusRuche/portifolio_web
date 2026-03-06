@@ -42,7 +42,7 @@ const projects = [
     title: 'Portfólio Sandra Oliveira Auriculoterapeuta',
     shortDesc: 'Landing page profissional focada em conversão e autoridade para atendimentos de auriculoterapia.',
     fullDesc: 'Um projeto desenvolvido para converter visitantes em pacientes. A interface foi pensada para transmitir calma e confiança, utilizando as cores da identidade visual da profissional. Implementei um fluxo de contato otimizado e estratégias de SEO local para garantir que a Sandra seja encontrada facilmente por quem busca seus serviços.',
-    image: 'https://images.unsplash.com/photo-1589829545856-d10d557cf95f?w=800&q=80',
+    image: '/images/sandra-site.jpg',
     tags: ['Vite', 'TypeScript', 'Tailwind CSS'],
     repo: 'https://github.com/SandraOliveiraAuri/portifolio',
     live: 'https://sandraoliveira.vercel.app/',
