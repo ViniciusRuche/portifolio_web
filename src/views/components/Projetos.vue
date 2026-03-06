@@ -44,7 +44,7 @@ const projects = [
     fullDesc: 'Um projeto desenvolvido para converter visitantes em pacientes. A interface foi pensada para transmitir calma e confiança, utilizando as cores da identidade visual da profissional. Implementei um fluxo de contato otimizado e estratégias de SEO local para garantir que a Sandra seja encontrada facilmente por quem busca seus serviços.',
     image: '/images/sandra-site.jpg',
     tags: ['Vite', 'TypeScript', 'Tailwind CSS'],
-    repo: 'https://github.com/SandraOliveiraAuri/portifolio',
+    repo: 'https://github.com/ViniciusRuche/portifolio_sandra',
     live: 'https://sandraoliveira.vercel.app/',
     features: ['SEO Otimizado', 'Call-to-Action estratégico para WhatsApp.', 'Layout Responsivo.']
   }
