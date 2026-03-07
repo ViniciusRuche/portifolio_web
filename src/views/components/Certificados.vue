@@ -7,21 +7,21 @@ const certificates = [
     title: 'Técnico em Informática',
     issuer: 'QI Faculdade e Escola Técnica',
     date: 'Março 2023',
-    image: 'https://images.unsplash.com/photo-1589330694653-ded6df03f754?q=80&w=1000',
+    image: '/images/diploma-ti.png',
     category: 'Educação'
   },
   {
     title: 'A1 Básico de Inglês - 80 Horas',
     issuer: 'Skill Idiomas',
     date: 'Dezembro 2017',
-    image: 'https://images.unsplash.com/photo-1589330694653-ded6df03f754?q=80&w=1000',
+    image: '/images/cert-skill.png',
     category: 'Idioma'
   },
   {
     title: 'Inglês - 195 Horas',
     issuer: 'TopWay',
     date: 'Maio 2020',
-    image: 'https://images.unsplash.com/photo-1589330694653-ded6df03f754?q=80&w=1000',
+    image: '/images/cert-topway.png',
     category: 'Idioma'
   },
   {
@@ -31,6 +31,13 @@ const certificates = [
     image: 'https://images.unsplash.com/photo-1589330694653-ded6df03f754?q=80&w=1000',
     category: 'Especialização'
   },
+  {
+    title: 'WorkShop - Desenvolvimento Profissional e Carreira',
+    issuer: 'Colégio São José - Palestrante: Matheus Battisi',
+    date: '22 de Setembro 2023 até 02 de Outubro 2023',
+    image: '/images/cert-workshop-sj.png',
+    category: 'Especialização'
+  }
 ]
 </script>
 <template>
