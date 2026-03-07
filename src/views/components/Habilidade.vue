@@ -1,12 +1,5 @@
 <script setup>
-import { 
-  Code2, 
-  Database, 
-  Wrench, 
-  Layout, 
-  Terminal, 
-  Smartphone 
-} from 'lucide-vue-next'
+import { Database, Wrench, Layout } from 'lucide-vue-next'
 
 const skillGroups = [
   {
@@ -41,48 +34,43 @@ const skillGroups = [
   }
 ]
 </script>
-
 <template>
-  <section id="habilidades" class="py-24 bg-[#050505] overflow-hidden">
+  <section id="habilidades" class="py-24 bg-background overflow-hidden transition-colors duration-500">
     <div class="container mx-auto px-6">
-      
       <div class="mb-16">
-        <h2 class="text-4xl font-black tracking-tighter text-white italic">
-          TECH <span class="text-indigo-500">STACK</span>
+        <h2 class="text-4xl font-black tracking-tighter text-foreground italic uppercase">
+          Tech <span class="text-indigo-600 dark:text-indigo-500">Stack</span>
         </h2>
-        <p class="text-slate-500 mt-2 font-medium">As tecnologias que utilizo para dar vida aos projetos.</p>
-        <div class="w-20 h-1 bg-indigo-500 rounded-full mt-4"></div>
+        <p class="text-muted-foreground mt-2 font-medium">As tecnologias que utilizo para dar vida aos projetos.</p>
+        <div class="w-20 h-1 bg-indigo-600 dark:bg-indigo-500 rounded-full mt-4"></div>
       </div>
-
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
         <div v-for="group in skillGroups" :key="group.category" class="space-y-6">
           
           <div class="flex items-center gap-3">
             <component :is="group.icon" :class="['w-5 h-5', group.color]" />
-            <h3 class="text-white font-bold tracking-widest uppercase text-sm">{{ group.category }}</h3>
+            <h3 class="text-foreground font-bold tracking-widest uppercase text-sm">{{ group.category }}</h3>
           </div>
-
           <div class="grid grid-cols-1 gap-3">
             <div 
               v-for="skill in group.skills" 
               :key="skill.name"
-              class="group relative flex items-center gap-4 p-4 rounded-2xl bg-white/[0.02] border border-white/5 hover:border-indigo-500/30 transition-all duration-300 overflow-hidden"
+              class="group relative flex items-center gap-4 p-4 rounded-2xl 
+                     bg-muted/40 dark:bg-white/[0.02] border border-border 
+                     hover:border-indigo-500/40 hover:shadow-lg hover:shadow-indigo-500/5 
+                     transition-all duration-300 overflow-hidden"
             >
-              <div class="absolute inset-0 bg-gradient-to-r from-indigo-500/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity"></div>
-              
+              <div class="absolute inset-0 bg-gradient-to-r from-indigo-500/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity"></div>
               <div class="relative z-10 w-8 h-8 flex items-center justify-center grayscale group-hover:grayscale-0 transition-all duration-500">
                 <img :src="skill.icon" :alt="skill.name" class="max-w-full max-h-full object-contain" />
               </div>
-
-              <span class="relative z-10 text-slate-400 group-hover:text-white font-semibold text-sm transition-colors">
+              <span class="relative z-10 text-muted-foreground group-hover:text-foreground font-semibold text-sm transition-colors">
                 {{ skill.name }}
               </span>
             </div>
           </div>
-
         </div>
       </div>
-
     </div>
   </section>
 </template>
