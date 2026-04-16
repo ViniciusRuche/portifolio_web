@@ -3,7 +3,7 @@ import { ref } from 'vue'
 import { useForm } from 'vee-validate'
 import * as yup from 'yup'
 import emailjs from '@emailjs/browser'
-import { Send, Mail, MessageSquare, User, Loader2, CheckCircle2 } from 'lucide-vue-next'
+import { Send, Mail, MessageSquare, User, Loader2, CheckCircle2, MapPin } from 'lucide-vue-next'
 import { Button } from '@/components/ui/button'
 import { Input } from '@/components/ui/input'
 import { Textarea } from '@/components/ui/textarea'
@@ -85,8 +85,19 @@ const onSubmit = form.handleSubmit(async (values) => {
                 </div>
               </div>
               <div class="flex items-center gap-4 text-foreground group">
+                <a href="https://wa.me/54991126379" target="_blank" rel="noopener noreferrer"
+                  class="w-12 h-12 rounded-2xl bg-muted border border-border flex items-center justify-center text-emerald-600 dark:text-emerald-400 group-hover:bg-emerald-500 group-hover:text-white transition-all duration-300"
+                > <MessageSquare size="20" /> </a>
+                <div>
+                  <p class="text-[10px] uppercase tracking-widest text-muted-foreground font-bold">Celular</p>
+                  <a href="https://wa.me/54991126379" target="_blank" 
+                    class="text-foreground font-medium hover:text-emerald-500 transition-colors"
+                  > (54) 99112-6379 </a>
+                </div>
+              </div>
+              <div class="flex items-center gap-4 text-foreground group">
                 <div class="w-12 h-12 rounded-2xl bg-muted border border-border flex items-center justify-center text-emerald-600 dark:text-emerald-400 group-hover:bg-emerald-500 group-hover:text-white transition-all duration-300">
-                  <MessageSquare size="20" />
+                  <MapPin size="20" />
                 </div>
                 <div>
                   <p class="text-[10px] uppercase tracking-widest text-muted-foreground font-bold">Localização</p>
