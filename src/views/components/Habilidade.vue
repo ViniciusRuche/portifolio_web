@@ -8,7 +8,7 @@ const skillGroups = [
     color: 'text-emerald-400',
     skills: [
       { name: 'Vue.js 3', icon: 'https://raw.githubusercontent.com/devicons/devicon/master/icons/vuejs/vuejs-original.svg' },
-      { name: 'TypeScript', icon: 'https://raw.githubusercontent.com/devicons/devicon/master/icons/typescript/typescript-original.svg' },
+      { name: 'JavaScript', icon: 'https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg' },
       { name: 'Tailwind CSS', icon: 'https://raw.githubusercontent.com/devicons/devicon/master/icons/tailwindcss/tailwindcss-original.svg' },
     ]
   },
@@ -28,7 +28,7 @@ const skillGroups = [
     color: 'text-purple-400',
     skills: [
       { name: 'Git / GitHub', icon: 'https://raw.githubusercontent.com/devicons/devicon/master/icons/git/git-original.svg' },
-      { name: 'Vitest', icon: 'https://vitest.dev/logo-shadow.svg' },
+      { name: 'Vitest', icon: 'https://vitest.dev/assets/vitest-light.fqspNQ2H.svg' },
       { name: 'Docker', icon: 'https://raw.githubusercontent.com/devicons/devicon/master/icons/docker/docker-original.svg' },
     ]
   }
